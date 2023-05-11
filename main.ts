@@ -4,19 +4,13 @@
 // 30 perces analóg óra, fél másoperces időtartamok, csak LED és pause
 // Mint a B megoldás, de egy 4-es FOR ciklussal
 input.onButtonPressed(Button.A, function () {
-    basic.showString("w")
-    basic.pause(2500)
-    basic.showString("R")
-    basic.pause(500)
-    basic.showString("w")
-    basic.pause(2500)
-    basic.showString("R")
-    basic.pause(500)
-    basic.showString("w")
-    basic.pause(2500)
-    basic.showString("w")
-    basic.pause(1500)
-    basic.showString("R")
+    for (let index = 0; index < 4; index++) {
+        basic.showString("w")
+        basic.pause(2500)
+        basic.showString("R")
+        basic.pause(500)
+    }
+    basic.pause(100)
     basic.clearScreen()
 })
 basic.forever(function () {

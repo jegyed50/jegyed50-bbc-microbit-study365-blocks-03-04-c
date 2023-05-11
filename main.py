@@ -5,19 +5,12 @@
 # Mint a B megoldás, de egy 4-es FOR ciklussal
 
 def on_button_pressed_a():
-    basic.show_string("w")
-    basic.pause(2500)
-    basic.show_string("R")
-    basic.pause(500)
-    basic.show_string("w")
-    basic.pause(2500)
-    basic.show_string("R")
-    basic.pause(500)
-    basic.show_string("w")
-    basic.pause(2500)
-    basic.show_string("w")
-    basic.show_string("R")
-    basic.pause(1500)
+    for index in range(4):
+        basic.show_string("w")
+        basic.pause(2500)
+        basic.show_string("R")
+        basic.pause(500)
+    basic.pause(100)
     basic.clear_screen()
 input.on_button_pressed(Button.A, on_button_pressed_a)
 
