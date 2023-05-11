@@ -15,8 +15,8 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("w")
     basic.pause(2500)
     basic.showString("w")
-    basic.showString("R")
     basic.pause(1500)
+    basic.showString("R")
     basic.clearScreen()
 })
 basic.forever(function () {
